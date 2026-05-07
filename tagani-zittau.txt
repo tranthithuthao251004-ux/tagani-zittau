@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TAGANI Zittau | Mini Markt & Karaoke Box</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #fff7e6; color: #111; }
+    header {
+      background: linear-gradient(135deg, #d71920, #003b8e);
+      color: white;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    header h1 { font-size: 64px; letter-spacing: 3px; margin-bottom: 10px; }
+    header h2 { font-size: 32px; color: #ffd84d; margin-bottom: 16px; }
+    header p { font-size: 20px; }
+    .hero-button {
+      display: inline-block;
+      margin-top: 24px;
+      background: #ffd84d;
+      color: #111;
+      text-decoration: none;
+      padding: 16px 28px;
+      border-radius: 999px;
+      font-weight: bold;
+      font-size: 18px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    .hero-button:hover { transform: translateY(-2px); }
+    nav { background: #111; padding: 14px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 16px; font-weight: bold; }
+    section { padding: 48px 10%; }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+      margin-bottom: 24px;
+    }
+    .tag { display: inline-block; background: #ffd84d; padding: 8px 14px; border-radius: 999px; font-weight: bold; margin-bottom: 16px; }
+    h3 { font-size: 30px; margin-bottom: 18px; color: #003b8e; }
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+    .offer {
+      background: white;
+      border: 3px solid #003b8e;
+      border-radius: 18px;
+      padding: 22px;
+      text-align: center;
+      min-height: 190px;
+    }
+    .offer strong { font-size: 44px; color: #d71920; display: block; margin-bottom: 12px; }
+    .best { border-color: #d71920; transform: scale(1.03); }
+    .best::before { content: "BEST DEAL"; background: #ffd84d; padding: 6px 12px; border-radius: 999px; font-weight: bold; display: inline-block; margin-bottom: 10px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .icon { font-size: 42px; margin-bottom: 12px; }
+    .cta {
+      background: #d71920;
+      color: white;
+      text-align: center;
+      border-radius: 24px;
+      padding: 36px;
+    }
+    .cta h3 { color: white; }
+    footer { background: #111; color: white; padding: 30px 10%; text-align: center; }
+    .placeholder {
+      height: 280px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #111, #003b8e);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      padding: 20px;
+    }
+    @media (max-width: 900px) {
+      .hero, .offers, .grid-3 { grid-template-columns: 1fr; }
+      header h1 { font-size: 42px; }
+      header h2 { font-size: 24px; }
+    }
+      .success-message {
+      display: none;
+      margin-top: 18px;
+      background: #e9f8ef;
+      border: 2px solid #2e9d55;
+      color: #145c2c;
+      padding: 16px;
+      border-radius: 14px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .booking-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 700px) { .booking-row { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>TAGANI</h1>
+    <h2>Mini Markt & Karaoke Box</h2>
+    <p>Snacks • Getränke • Karaoke • Spaß in Zittau</p>
+    <a class="hero-button" href="#booking">Jetzt Karaoke buchen</a>
+  </header>
+
+  <nav>
+    <a href="#idee">Idee</a>
+    <a href="#angebote">Angebote</a>
+    <a href="#warum">Warum TAGANI?</a>
+    <a href="#booking">Buchung</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section class="hero" id="idee">
+    <div class="card">
+      <span class="tag">Neu in Zittau</span>
+      <h3>Alles, was du brauchst – und Spaß dazu!</h3>
+      <p>TAGANI verbindet einen kleinen Mini-Markt mit einem privaten Karaoke-Raum. Unsere Kunden können Snacks und Getränke kaufen und gleichzeitig mit Freunden Karaoke singen.</p>
+      <br />
+      <p>Über unsere Online-Plattform können Kunden den Karaoke-Raum einfach reservieren und passende Angebote auswählen.</p>
+      <br />
+      <p>Das Konzept richtet sich besonders an junge Menschen, Schüler, Studierende und Freundesgruppen, die eine günstige und gemütliche Freizeitmöglichkeit suchen.</p>
+    </div>
+    <div class="placeholder">🎤 Privater Karaoke-Raum<br />+<br />🛒 Snacks & Getränke</div>
+  </section>
+
+  <section id="angebote">
+    <h3>Karaoke Angebote</h3>
+    <div class="offers">
+      <div class="offer best">
+        <strong>18 €</strong>
+        <p>2 Stunden Karaoke<br />+ 2 Getränke<br />+ 1 Snack</p>
+      </div>
+      <div class="offer">
+        <strong>10 €</strong>
+        <p>1 Stunde Karaoke<br />+ 1 Getränk</p>
+      </div>
+      <div class="offer">
+        <strong>25 €</strong>
+        <p>2 Stunden Karaoke<br />+ 4 Getränke<br />+ 2 Snacks</p>
+      </div>
+      <div class="offer">
+        <strong>30 €</strong>
+        <p>3 Stunden Karaoke<br />+ 4 Getränke<br />+ 2 Snacks</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking">
+    <h3>Online-Buchung</h3>
+    <div class="card">
+      <span class="tag">Karaoke einfach reservieren</span>
+      <p>Reserviere deinen privaten Karaoke-Raum online. Wähle Datum, Uhrzeit, Gruppengröße und dein Lieblingsangebot.</p>
+      <br />
+      <form id="bookingForm" style="display:grid; gap:14px; margin-top:18px;">
+        <div class="booking-row">
+          <label><strong>Vorname</strong><br /><input type="text" placeholder="z. B. Anna" style="width:100%; padding:12px; border-radius:10px; border:1px solid #ccc;"></label>
+          <label><strong>E-Mail</strong><br /><input type="email" placeholder="name@email.de" style="width:100%; padding:12px; border-radius:10px; border:1px solid #ccc;"></label>
+        </div>
+        <div class="booking-row">
+          <label><strong>Datum</strong><br /><input type="date" style="width:100%; padding:12px; border-radius:10px; border:1px solid #ccc;"></label>
+          <label><strong>Uhrzeit</strong><br />
+            <select style="width:100%; padding:12px; border-radius:10px; border:1px solid #ccc;">
+              <option>17:00 – 18:00</option>
+              <option>18:00 – 20:00</option>
+              <option>20:00 – 22:00</option>
+              <option>22:00 – 23:00</option>
+            </select>
+          </label>
+        </div>
+        <div class="booking-row">
+          <label><strong>Gruppengröße</strong><br />
+            <select style="width:100%; padding:12px; border-radius:10px; border:1px solid #ccc;">
+              <option>2 Personen</option>
+              <option>3–4 Personen</option>
+              <option>5–6 Personen</option>
+            </select>
+          </label>
+          <label><strong>Angebot</strong><br />
+            <select style="width:100%; padding:12px; border-radius:10px; border:1px solid #ccc;">
+              <option>10 € – 1 Stunde + 1 Getränk</option>
+              <option>18 € – 2 Stunden + 2 Getränke + 1 Snack</option>
+              <option>25 € – 2 Stunden + 4 Getränke + 2 Snacks</option>
+              <option>30 € – 3 Stunden + 4 Getränke + 2 Snacks</option>
+            </select>
+          </label>
+        </div>
+        <label><strong>Besondere Wünsche</strong><br /><textarea placeholder="z. B. Geburtstagsfeier, bestimmte Getränke ..." style="width:100%; min-height:90px; padding:12px; border-radius:10px; border:1px solid #ccc;"></textarea></label>
+        <button type="button" onclick="document.getElementById('bookingSuccess').style.display='block'" style="background:#d71920; color:white; border:none; padding:16px; border-radius:999px; font-size:18px; font-weight:bold; cursor:pointer;">Jetzt buchen</button>
+      </form>
+      <div id="bookingSuccess" class="success-message">Vielen Dank! Deine Buchungsanfrage wurde erfolgreich gesendet.</div>
+      <p style="margin-top:14px; font-size:14px; color:#555;">Hinweis: Dies ist eine Demo-Buchung für die Präsentation.</p>
+    </div>
+  </section>
+
+  <section id="warum">
+    <h3>Warum TAGANI?</h3>
+    <div class="grid-3">
+      <div class="card"><div class="icon">🔒</div><h4>Privat & gemütlich</h4><p>Ein eigener Karaoke-Raum für kleine Gruppen.</p></div>
+      <div class="card"><div class="icon">💸</div><h4>Günstige Preise</h4><p>Perfekt für Studierende und junge Leute.</p></div>
+      <div class="card"><div class="icon">📍</div><h4>Gute Lage</h4><p>Standort: 18 Külzufer, 02763 Zittau.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="cta">
+      <h3>Eröffnungsspecial</h3>
+      <p style="font-size: 44px; font-weight: bold;">-20 % auf Karaoke!</p>
+      <p>Komm vorbei & hab Spaß!</p>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h3>Kontakt & Öffnungszeiten</h3>
+    <div class="card">
+      <p><strong>Adresse:</strong> 18 Külzufer, 02763 Zittau</p>
+      <p><strong>Öffnungszeiten:</strong> Mo–Sa: 9:00 – 22:00</p>
+      <p><strong>Instagram/TikTok:</strong> @tagani.zittau</p>
+      <p><strong>Website:</strong> https://tagani-zittau.netlify.app</p>
+      <br />
+      <h4>QR-Code zur Website</h4>
+      <p>Scanne den QR-Code und buche deinen Karaoke-Raum online.</p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://tagani-zittau.netlify.app" alt="QR-Code TAGANI Website" style="margin-top:14px; width:180px; height:180px; border-radius:12px; border:8px solid white; box-shadow:0 4px 14px rgba(0,0,0,0.15);" />
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 TAGANI – Mini Markt & Karaoke Box</p>
+  </footer>
+</body>
+</html>
